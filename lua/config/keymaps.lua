@@ -10,3 +10,6 @@ map("i", "<A-k>", "<esc>gk", { desc = "Move up" })
 map("i", "<A-j>", "<esc>gj", { desc = "Move down" })
 map("v", "<A-k>", "<esc>gk", { desc = "Move up" })
 map("v", "<A-j>", "<esc>gj", { desc = "Move down" })
+
+pcall(vim.keymap.del, "n", "<leader>|")
+vim.keymap.set("n", "<leader>\\", "<C-W>v", { desc = "Split Window Right", remap = true })
