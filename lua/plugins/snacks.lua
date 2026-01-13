@@ -3,15 +3,15 @@ return {
     "folke/snacks.nvim",
     opts = {
       picker = {
-        hidden = true,
+        exclude = { ".DS_Store", ".git", ".next" },
         sources = {
           files = {
-            hidden = true, -- Show hidden/dotfiles
-            ignored = false, -- Respect .gitignore
+            hidden = false, -- Include hidden files?
+            ignored = false, -- Include gitignored files?
           },
           grep = {
-            hidden = true, -- Also search in hidden files
-            ignored = false,
+            hidden = false, -- Also search in hidden files
+            ignored = false, -- Include gitignored files?
           },
         },
       },
